@@ -1,11 +1,11 @@
 variable "cluster_name" {
   description = "Variable to provide your desired name for the cluster. The script will create a random name if this is empty"
   type        = string
-  default     = ""
+  default     = "togg-jx"
 }
 variable "location" {
   type        = string
-  default     = "australiaeast"
+  default     = "westeurope"
   description = "The Azure region in to which to provision the cluster"
 }
 
@@ -123,7 +123,7 @@ variable "subdomain" {
 variable "apex_resource_group_name" {
   type        = string
   description = "The resource group in which the Azure DNS apex domain resides. Required if apex_domain_integration_enabled is true"
-  default     = ""
+  default     = "dns-jx"
 }
 variable "dns_resource_group_name" {
   type        = string
